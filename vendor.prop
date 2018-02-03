@@ -152,9 +152,6 @@ persist.vendor.data.mode=concurrent
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
