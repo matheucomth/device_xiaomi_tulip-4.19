@@ -28,6 +28,9 @@
 #
 
 on init
+    # Disable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/schedtune.colocate 0
@@ -104,6 +107,9 @@ on boot
     chown system system /persist/speccfg/vendor_persist.prop
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
+    
+    # Turn on sleep modes
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     # Camera
     chmod 0660 /sys/android_camera/sensor
