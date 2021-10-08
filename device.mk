@@ -125,7 +125,8 @@ PRODUCT_COPY_FILES += \
 
 # Biometrics
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_twolip
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_twolip \
+    android.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
@@ -135,6 +136,7 @@ PRODUCT_BOOT_JARS += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
@@ -170,6 +172,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
@@ -188,7 +191,8 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.4.vendor
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -207,6 +211,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
+    android.hardware.gnss@2.1.vendor \
     libbatching \
     libgeofencing \
     libgnss \
@@ -270,11 +275,19 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(DEVICE_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+# Keystore
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.0.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_twolip
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.1.vendor
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(DEVICE_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
@@ -286,6 +299,11 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
+
+# Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.system.net.netd@1.1.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -329,9 +347,13 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio.config@1.1 \
     android.hardware.radio@1.5 \
     android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.1.vendor \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
