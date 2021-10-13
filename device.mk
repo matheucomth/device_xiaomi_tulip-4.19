@@ -189,6 +189,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_shenchao_nt36672a_fhdplus_video_mode_dsi_panel.xml \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml
 
+# Display Device Config
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
@@ -385,6 +389,10 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti-telephony-utils \
     telephony-ext
+	
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
 
 # IPACM
 PRODUCT_PACKAGES += \
