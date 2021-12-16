@@ -22,38 +22,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Palladium stuff
+$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 
 # Inherit from twolip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Some common aosp Properties
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
+# PalladiumOS Properties
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED = true
+PALLADIUM_BUILD_TYPE := OFFICIAL
 
-# OFFICAL STUFF
-CUSTOM_BUILD_TYPE := OFFICIAL
+# #Props for About Phone
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=Muti605 \
+    ro.palladiumdevice.cpu=SDM636 \
+    ro.palladiumdevice.display=6.26 \
+    ro.palladiumdevice.displaytype=FULLHD+ \
+    ro.palladiumdevice.battery=4000mAh \
+    ro.palladiumdevice.camera=12MP+5MP
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := twolip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_twolip
+PRODUCT_NAME := palladium_twolip
 PRODUCT_MODEL := Redmi Note 6 Pro
-
-# PixelPlusUI OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.ppui.device_name=RedmiNote6Pro \
-    ro.ppui.version=3.9 \
-    ro.ppui.version_code=Eternal \
-    ro.ppui.is_official=true \
-    ro.ppui.maintainer_name=Mustafa
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
