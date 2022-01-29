@@ -30,7 +30,8 @@ TARGET_KERNEL_VERSION := 4.19
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+    bt \
+    overlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
