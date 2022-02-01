@@ -48,7 +48,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/tulip-perf_defconfig
-TARGET_KERNEL_VERSION := 4.19
 KERNEL_MODULES_INSTALL := vendor
 
 # QCOM hardware
