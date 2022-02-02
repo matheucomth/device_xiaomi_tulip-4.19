@@ -131,9 +131,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
