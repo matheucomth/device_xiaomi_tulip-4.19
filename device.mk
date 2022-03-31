@@ -339,6 +339,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
