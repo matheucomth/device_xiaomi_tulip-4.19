@@ -36,7 +36,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    kernel/msm-4.19
 
 # APN List
 PRODUCT_COPY_FILES += \
