@@ -43,3 +43,6 @@ persist.service.pcsync.enable=0
 
 # Venom
 ro.surface_flinger.running_without_sync_framework=true
+
+# Watchdog
+ro.hw_timeout_multiplier=3
