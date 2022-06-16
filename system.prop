@@ -14,6 +14,12 @@ persist.vendor.dpm.loglevel=0
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# Perfonmance
+debug.performance.tuning=1
+
+# Pre-rendering
+ro.vendor.perf.scroll_opt=true
+
 # Radio
 DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
