@@ -18,4 +18,9 @@
 <resources>
     <!-- Adjust the icon padding in status bar for rounded corners --> 
     <dimen name="rounded_corner_content_padding">20px</dimen>
+
+    <!-- dimensions for the navigation bar handle -->
+    <dimen name="navigation_handle_radius">2dp</dimen>
+    <dimen name="navigation_handle_bottom">8dp</dimen>
+    <dimen name="navigation_home_handle_width">108dp</dimen>
 </resources>
