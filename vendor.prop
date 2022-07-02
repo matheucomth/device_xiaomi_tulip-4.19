@@ -101,10 +101,6 @@ persist.vendor.imx376_sunny.low.lux=290
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
-# Data
-persist.data.df.dev_name=rmnet_usb0
-persist.vendor.data.profile_update=true
-
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.early.sf.duration=16000000
@@ -129,7 +125,6 @@ vendor.display.idle_time=32767
 vendor.gralloc.enable_fb_ubwc=1
 
 # DPM
-persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
