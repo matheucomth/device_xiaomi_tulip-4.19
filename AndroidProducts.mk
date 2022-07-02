@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/palladium_twolip.mk
+    $(LOCAL_DIR)/arrow_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    palladium_twolip-user \
-    palladium_twolip-userdebug \
-    palladium_twolip-eng
+    arrow_tulip-user \
+    arrow_tulip-userdebug \
+    arrow_tulip-eng

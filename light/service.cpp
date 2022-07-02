@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_twolip"
+#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_tulip"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>

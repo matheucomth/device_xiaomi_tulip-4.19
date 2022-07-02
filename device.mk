@@ -4,12 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/twolip
-
-# Board
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := sdm660
-OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660-S
+DEVICE_PATH := device/xiaomi/tulip
 
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -125,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Biometrics
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_twolip \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip \
     android.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_PACKAGES += \
@@ -292,7 +287,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_twolip
+    android.hardware.light@2.0-service.xiaomi_tulip
 
 # Media
 PRODUCT_PACKAGES += \
@@ -451,4 +446,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/twolip/twolip-vendor.mk)
+$(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)

@@ -17,7 +17,7 @@
 
 // Author := dev_harsh1998, Isaac Chen
 
-#define LOG_TAG "android.hardware.light@2.0-impl.xiaomi_twolip"
+#define LOG_TAG "android.hardware.light@2.0-impl.xiaomi_tulip"
 /* #define LOG_NDEBUG 0 */
 
 #include "Light.h"
