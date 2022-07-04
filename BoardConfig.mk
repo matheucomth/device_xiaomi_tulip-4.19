@@ -52,6 +52,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/tulip-perf_defconfig
 TARGET_KERNEL_VERSION := 4.19
+TARGET_KERNEL_CLANG_VERSION := neutron
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
