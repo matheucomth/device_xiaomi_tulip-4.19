@@ -9,7 +9,7 @@ DEVICE_PATH := device/xiaomi/tulip
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := sdm660
-OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
+OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660-S
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
