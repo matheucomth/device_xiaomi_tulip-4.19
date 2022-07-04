@@ -376,7 +376,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
-    librmnetctl
+    librmnetctl \
     libavservices_minijail.vendor
 
 PRODUCT_PACKAGES += \
