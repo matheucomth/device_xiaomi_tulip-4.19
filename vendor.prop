@@ -143,6 +143,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics
+debug.cpurend.vsync=false \
+
 # Increase Scrool Smoothness 
 ro.vendor.qti.cgroup_follow.enable=true
 persist.vendor.qti.inputopts.enable=true
