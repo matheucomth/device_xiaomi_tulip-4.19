@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_tulip.mk
+    $(LOCAL_DIR)/aosp_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_tulip-user \
-    arrow_tulip-userdebug \
-    arrow_tulip-eng
+    aosp_tulip-user \
+    aosp_tulip-userdebug \
+    aosp_tulip-eng
